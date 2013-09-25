@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bookings>
+  <busses>
+    <bus id="1">
+      <location>3</location>
+      <time>1</time>
+      <seats>
+        <seat id="">
+          <bookedName></bookedName>
+          <bookingRef></bookingRef>
+        </seat>
+      </seats>
+    </bus>
+  </busses>
+  <locations>
+    <location id="1">
+      <name></name>
+      <street1></street1>
+      <street2></street2>
+      <street3></street3>
+      <city></city>
+      <postcode></postcode>
+      <phone></phone>
+    </location>
+  </locations>
+  <times>
+  </times>
+</bookings>

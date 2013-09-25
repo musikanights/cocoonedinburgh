@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bookings"
+    targetNamespace="http://tempuri.org/bookings.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/bookings.xsd"
+    xmlns:mstns="http://tempuri.org/bookings.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="bookings">
+    <xs:complexType>
+      <xs:sequence>
+
+        
+        <!-- BUSSES -->
+        
+        <xs:element name="buses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="bus">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="location" type="xs:integer"/>
+                    <xs:element name="time" type="xs:integer"/>
+                    
+                    
+                    <!-- SEATS -->
+                    
+                    <xs:element name="seats">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="seat">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="bookedName" type="xs:string" />
+                                <xs:element name="bookingReference" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="id" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" />
+                      </xs:complexType>
+                    </xs:element>
+                    
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" />
+          </xs:complexType>
+        </xs:element>
+
+        
+        <!-- LOCATIONS -->
+        
+        <xs:element name="locations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="location">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                    <xs:element name="street1" type="xs:string" />
+                    <xs:element name="street2" type="xs:string" />
+                    <xs:element name="street3" type="xs:string" />
+                    <xs:element name="city" type="xs:string" />
+                    <xs:element name="postcode" type="xs:string" />
+                    <xs:element name="phone" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>  
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" />
+          </xs:complexType>
+        </xs:element>
+        
+        
+        <!-- TIMES -->
+        
+        <xs:element name="times">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="time" type="xs:date" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        
+        <!-- SEATS -->
+        
+        
+        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
