@@ -5,7 +5,7 @@ using System.Web;
 
 namespace CocoonMicrosite
 {
-    public class Location
+    public class Venue
     {
         public string Name { get; set; }
         public string Street1 { get; set; }

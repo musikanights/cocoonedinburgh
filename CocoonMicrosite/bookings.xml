@@ -12,17 +12,18 @@
       </seats>
     </bus>
   </busses>
-  <locations>
-    <location id="1">
-      <name></name>
-      <street1></street1>
-      <street2></street2>
-      <street3></street3>
-      <city></city>
-      <postcode></postcode>
-      <phone></phone>
-    </location>
-  </locations>
+  <venues>
+    <venue id="1">
+      <name>Venue 1</name>
+      <street1>V1 Street 1</street1>
+      <street2>V1 Street 2</street2>
+      <street3>V1 Street 3</street3>
+      <city>V1 City</city>
+      <postcode>V1 Postcode</postcode>
+      <phone>V1 Phone</phone>
+    </venue>
+  </venues>
   <times>
+    <time id="1"></time>
   </times>
 </bookings>
