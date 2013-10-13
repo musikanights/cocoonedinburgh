@@ -7,9 +7,9 @@ namespace CocoonMicrosite
 {
     public class Bus
     {
-        public int Id { get; set; }
-        public Venue Location { get; set; }
+        public string Id { get; set; }
+        public Venue Venue { get; set; }
         public List<Seat> Seats { get; set; }
-        public DateTime Time { get; set; }
+        public Time Time { get; set; }
     }
 }

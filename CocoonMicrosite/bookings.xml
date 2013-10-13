@@ -2,7 +2,7 @@
 <bookings>
   <busses>
     <bus id="1">
-      <location>3</location>
+      <venue>3</venue>
       <time>1</time>
       <seats>
         <seat id="">

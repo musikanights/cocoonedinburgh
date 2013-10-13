@@ -16,7 +16,7 @@
                   <xs:sequence>
                     
                     <!-- Venue Reference -->
-                    <xs:element type="xs:byte" name="location"/>
+                    <xs:element type="xs:byte" name="venue"/>
                     
                     <!-- Time Reference -->
                     <xs:element type="xs:byte" name="time"/>
