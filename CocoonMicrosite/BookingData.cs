@@ -27,19 +27,24 @@ namespace CocoonMicrosite
             }
         }
 
-        public Venue GetVenue(int id)
+        public Venue GetVenue(string id)
         {
             Venue venueFromFile = new Venue();
-            XElement venueElement = _data.Root.Elements("venues").Elements("venue").FirstOrDefault(x => x.Attribute("id").Value == "1");
+            XElement venueElement = _data.Root.Elements("venues").Elements("venue").FirstOrDefault(x => x.Attribute("id").Value == id);
 
             if (venueElement != null)
             {
                 venueFromFile = new Venue()
                                     {
                                         Name = venueElement.Element("name").Value,
+                                        Street1 = venueElement.Element("street1").Value,
+                                        Street2 = venueElement.Element("street2").Value,
+                                        Street3 = venueElement.Element("street3").Value,
+                                        City = venueElement.Element("city").Value,
+                                        Postcode = venueElement.Element("postcode").Value,
+                                        PhoneNumber = venueElement.Element("phone").Value
                                     };
             }
-
 
             return venueFromFile;
         }

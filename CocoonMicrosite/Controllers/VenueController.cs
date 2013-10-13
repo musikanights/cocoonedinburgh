@@ -20,10 +20,10 @@ namespace CocoonMicrosite.Controllers
         }
 
         // GET api/venue/5
-        public Venue Get(int id)
+        public Venue Get(string id)
         {
             bookingData = new BookingData();
-            return bookingData.GetVenue(1);
+            return bookingData.GetVenue(id);
         }
 
         // POST api/venue
