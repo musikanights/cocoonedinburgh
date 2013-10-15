@@ -136,7 +136,9 @@
     <Compile Include="Venue.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bookings.xml" />
+    <Content Include="bookings.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -197,6 +199,21 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="TestSite\apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="TestSite\apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="TestSite\apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="TestSite\apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="TestSite\apple-touch-icon-precomposed.png" />
+    <Content Include="TestSite\apple-touch-icon.png" />
+    <Content Include="TestSite\Times.html" />
+    <Content Include="TestSite\css\main.css" />
+    <Content Include="TestSite\css\normalize.css" />
+    <Content Include="TestSite\css\normalize.min.css" />
+    <Content Include="TestSite\favicon.ico" />
+    <Content Include="TestSite\index.html" />
+    <Content Include="TestSite\js\main.js" />
+    <Content Include="TestSite\js\vendor\jquery-1.10.1.min.js" />
+    <Content Include="TestSite\js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -211,6 +228,7 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="TestSite\Venues.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -242,6 +260,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="TestSite\img\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
